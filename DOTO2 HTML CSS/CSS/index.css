@@ -1,0 +1,482 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+@font-face {
+    font-family: Albertus;
+    src: url(../assets/AlbertusNova.woff)
+}
+
+.header {
+    padding: 0%;
+    margin: 0%;
+    height: fit-content;
+}
+
+.header-video {
+    width: 100%;
+}
+
+.header-text {
+    padding: 0%;
+    margin: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 6vw;
+    margin-bottom: 0%;
+    font-family: Albertus;
+}
+
+.header-btn {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 2vw;
+    color: white;
+    background-color: black;
+    border: none;
+    margin-top: 6%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navbar {
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-logo {
+    margin-top: 2%;
+    width: 20%;
+    margin-right: 30%;
+}
+
+.nav-logo img {
+    align-items: center;
+    padding-left: 3%;
+    width: 100%;
+}
+
+.nav-menu:hover {
+    background-color: gray;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 10vh;
+    flex-wrap: wrap;
+    padding: 0% 0% 0.3% 0.3%;
+}
+
+.nav-menu-member {
+    color: white;
+    width: 12vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 0% 0.3% 0.3%;
+    font-size: 17px;
+}
+
+.nav-menu-member-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 10vh;
+    flex-wrap: wrap;
+    font-size: 17px;
+}
+
+.nav-menu-member:hover {
+    cursor: default;
+}
+
+.nav-menu-member-dropdown {
+    display: none;
+    position: relative;
+    background-color: black;
+    text-align: center;
+}
+
+.nav-menu-member-item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 12vw;
+}
+
+.nav-menu-member-item:hover {
+    background-color: gray;
+}
+
+.nav-menu-member-header:hover {
+    background-color: gray;
+}
+
+.nav-menu-member-header:hover .nav-menu-member-dropdown {
+    display: block;
+}
+
+.slide-container {
+    width: 100%;
+    position: relative;
+    margin: 0%;
+}
+
+.Slides img {
+    width: 100%;
+}
+
+.Slides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 1vw;
+    padding: 1vw;
+    color: white;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dot {
+    display: inline-block;
+    height: 1vh;
+    width: 1vw;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active,
+.dot:hover {
+    background-color: gray;
+}
+
+.fading {
+    -webkit-animation-name: fading;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fading;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fading {
+    from {
+        opacity: .2
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fading {
+    from {
+        opacity: .2
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.parallax1 {
+    margin-top: -0.4%;
+    height: 100vh;
+    background-image: url("../assets/parralax1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.parallax2 {
+    height: 100vh;
+    background-image: url("../assets/parralax2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.parallax3 {
+    margin-top: 1.4%;
+    height: 100vh;
+    background-image: url("../assets/parralax3.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.information {
+    margin: 0%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.information h1 {
+    font-size: 2vw;
+}
+
+.information p {
+    font-size: 1.25vw;
+}
+
+.footer {
+    background-color: black;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw 3vw 0vw 0vw;
+    padding-right: 0%;
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+.foot-logo {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+.foot-logo img {
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 10%;
+}
+
+.footer-text {
+    font-size: 17px;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
+
+.footer-text p {
+    font-size: 1vw;
+}
+
+.content {
+    padding: 0%;
+}
+
+.background {
+    height: 100vh;
+    background-image: url(../assets/regisslide1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.regis-box {
+    background-color: white;
+    height: 100vh;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+}
+
+.navbar-regis {
+    z-index: 999;
+    background: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+}
+
+.navbar-regis a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.title {
+    width: 100%;
+    margin-top: 40%;
+    text-align: center;
+}
+
+.title-text {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.regis-box form {
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.regis-box form input {
+    padding-right: 30%;
+    margin-bottom: 5%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.regis-box form select {
+    margin-bottom: 5%;
+}
+
+.regis-box form #DOB {
+    padding-right: 0%;
+    margin-bottom: 10%;
+}
+
+.regis-box form input[type=submit] {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 12px;
+    margin-left: 20%;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+    .navbar,
+    .navbar-regis {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 50%;
+        position: static;
+        background-color: black;
+    }
+    .header-text {
+        margin-top: 35%;
+    }
+    .parallax1 {
+        margin-top: -0.7%;
+    }
+    .parallax3 {
+        margin-top: -0.4%;
+    }
+    .nav-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        margin-left: 28%;
+    }
+    .nav-logo img {
+        display: flex;
+        width: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 10vh;
+        flex-wrap: wrap;
+    }
+    a {
+        font-size: 3vw;
+    }
+    .nav-menu-member-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 10vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* text-align: center; */
+    }
+    .nav-menu-member {
+        width: 100vw;
+    }
+    .nav-menu-member-item {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        text-align: center;
+        padding: 0%;
+    }
+    .regis-box {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        display: flex;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        margin-top: 0%;
+        /* justify-content: center; */
+    }
+    .regis-box .title {
+        margin-top: 15%;
+    }
+    .regis-box form {
+        margin-bottom: 15%;
+    }
+}

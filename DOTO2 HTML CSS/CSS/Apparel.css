@@ -1,0 +1,251 @@
+* {
+    margin: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar {
+    z-index: 999;
+    background: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    margin: 0%;
+    align-items: center;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-logo {
+    margin-top: 2%;
+    width: 20%;
+    margin-right: 30%;
+}
+
+.nav-logo img {
+    align-items: center;
+    padding-left: 3%;
+    width: 100%;
+}
+
+.nav-menu:hover {
+    background-color: gray;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 0% 0% 0.3% 0.3%;
+}
+
+.nav-menu-member {
+    color: white;
+    width: 12vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 0% 0.3% 0.3%;
+    font-size: 17px;
+}
+
+.nav-menu-member-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 10vh;
+    flex-wrap: wrap;
+    font-size: 17px;
+}
+
+.nav-menu-member:hover {
+    background-color: gray;
+}
+
+.nav-menu-member-dropdown {
+    display: none;
+    position: relative;
+    background-color: black;
+    text-align: center;
+}
+
+.nav-menu-member-item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 12vw;
+}
+
+.nav-menu-member-item:hover {
+    background-color: gray;
+}
+
+.nav-menu-member-header:hover {
+    background-color: gray;
+}
+
+.nav-menu-member-header:hover .nav-menu-member-dropdown {
+    display: block;
+}
+
+@media screen and (max-width:800px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 50%;
+        position: static;
+    }
+    .nav-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        margin-left: 28%;
+    }
+    .nav-logo img {
+        display: flex;
+        width: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 8vh;
+        flex-wrap: wrap;
+    }
+    a {
+        font-size: 3vw;
+    }
+    .nav-menu-member-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 10vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* text-align: center; */
+    }
+    .nav-menu-member {
+        width: 100vw;
+    }
+    .nav-menu-member-item {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        text-align: center;
+        padding: 0%;
+    }
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(31, 30, 30);
+    background-image: url('../assets/cubes.png');
+}
+
+h1 {
+    color: aliceblue;
+    padding: 2vw;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: lighter;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 85vw;
+    gap: 3vw;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.hoodie {
+    background-color: darkslategrey;
+    font-size: 1.3vw;
+}
+
+.tshirt {
+    background-color: darkslategrey;
+    font-size: 1.3vw;
+}
+
+.content img {
+    background-color: dimgray;
+    width: 20vw;
+}
+
+.content img:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+p {
+    padding-bottom: 0.5vw;
+    color: aliceblue;
+}
+
+.footer {
+    background-color: black;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw 3vw 0vw 0vw;
+    padding-right: 0%;
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+.foot-logo {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+.foot-logo img {
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 10%;
+}
+
+.footer-text {
+    font-size: 1vw;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
+
+.footer-text p {
+    font-size: 1vw;
+}

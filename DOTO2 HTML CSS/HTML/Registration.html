@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar-regis">
+        <div class="nav-logo">
+            <img src="../assets/Logo.png" alt="">
+        </div>
+        <div class="nav-menu">
+            <a href="../HTML/Home.html">Home</a>
+        </div>
+        <div class="nav-menu">
+            <a href="../HTML/hero.html">Heroes</a>
+        </div>
+        <div class="nav-menu">
+            <a href="../HTML/game mechanics.html">Game Mechanics</a>
+        </div>
+        <div class="nav-menu-member-header">
+            <div class="nav-menu-member">
+                Merchandises
+            </div>
+            <div class="nav-menu-member-dropdown">
+                <div class="nav-menu-member-item">
+                    <a href="../HTML/Apparel.html">
+                        Apparels
+                    </a>
+                </div>
+                <div class="nav-menu-member-item">
+                    <a href="../HTML/collectibles.html">
+                        Collectibles
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-menu">
+            <a href="Registration.html">Registration</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="background"></div>
+        <div class="regis-box">
+
+            <div class="title">
+                <span class="title-text">SIGN UP</span>
+            </div>
+            <form action="" method="">
+                <Label>Username</Label>
+                <br>
+                <input type="text" name="Username" id="Username">
+                <br>
+                <Label>Email</Label>
+                <br>
+                <input type="text" name="Email" id="Email">
+                <br>
+                <Label>Password</Label>
+                <br>
+                <input type="password" name="Password" id="Password">
+                <br>
+                <Label>Region</Label>
+                <br>
+                <select name="Region" id="Region">
+                        <option value="-1">-Select your region-</option>
+                        <option value="1">Europe</option>
+                        <option value="2">Asia</option>
+                        <option value="3">Africa</option>
+                        <option value="4">America</option>
+                    </select>
+                <br>
+                <Label>Date of Birth</Label>
+                <br>
+                <input type="date" name="DOB" id="DOB">
+                <br>
+                <input type="submit" value="SIGN UP" id="submit" onclick="validate()">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="foot-logo">
+            <img src="../assets/Valve_logo.svg.png" alt="">
+            <img src="../assets/Logo.png" alt="">
+        </div>
+        <div class="footer-text">
+            <p>Doto2 and the Doto2 logo are trademarks and/or registered trademarks of Valve Corporation. 2023 Valve Corporation.</p>
+            <p>&copy; all rights reserved.</p><br>
+            <p>MADE BY: PATRICIA/2301863585</p>
+        </div>
+    </div>
+</body>
+<script src="../JS/regis.js"></script>
+
+</html>

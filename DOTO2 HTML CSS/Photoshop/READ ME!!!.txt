@@ -1,0 +1,4 @@
+English: please load the albr55w.tiff (font file) first before openning the .psd file. if not, there will be some missing content in it.
+Indonesia: mohon memuat albr55w.tiff (berkas tulisan) sebelum membuka berkas .psd. jika tidak, akan ada beberapa isi yang menghilang didalamnya.
+Japanese: .psd ファイルを開く前に, まず albr55w.tiff （フォントファイル）をロードしてくださ. そうでない場合は, コンテンツが不足している可能性があります.
+Chinese (SMP): 请先打开 albr55w.tiff （字体文件）, 然后再打开.psd文件. 如果没有, 其中将缺少一些内容.
